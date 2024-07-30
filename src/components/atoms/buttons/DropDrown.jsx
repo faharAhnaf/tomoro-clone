@@ -2,11 +2,9 @@
 import Button from './Button';
 const DropDown = ({text}) => {
   return (
-    <div className="dropdown dropdown-bottom">
-      <div tabIndex={0} role="button" className="">
+    <div className="h-[24px] font-normal text-[#222] leading-[24px] whitespace-nowrap align-middle  text-[20px] table-cell">
         <Button text={text}></Button>
-      </div>
-      <ul
+      {/* <ul
         tabIndex={0}
         className={`dropdown-content menu bg-base-100 gap-2 z-[1] w-48 p-2 shadow ml-12`}
       >
@@ -16,7 +14,7 @@ const DropDown = ({text}) => {
         <li>
           <a>Privacy Policy</a>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

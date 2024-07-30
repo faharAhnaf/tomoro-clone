@@ -1,12 +1,12 @@
-const Button = (props) => {
-  const { text, spanStyle, divStyle = "pl-12" } = props;
+import { Link } from "react-router-dom";
+const Button = ({text, spanStyle, divStyle = "pl-[65px]", route}) => {
   return (
-    <div className={`py-9 ${divStyle}`}>
-      <span
-        className={`text-xl hover:cursor-pointer hover:text-orange-500 font-sans font-light ${spanStyle}`}
-      >
-        {text}
-      </span>
+    <div
+      className={`${divStyle} h-[24px] font-normal text-[#222] leading-[24px] whitespace-nowrap align-middle  text-[20px] table-cell`}
+    >
+      <Link to={route}>
+        <span className={` hover:cursor-pointer ${spanStyle}`}>{text}</span>
+      </Link>
     </div>
   );
 };
